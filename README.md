@@ -4,14 +4,14 @@
 ## References:
 
 - Building your custom Manjaro ISO via Github Actions CI
-      - <https://www.youtube.com/watch?v=S2t5Iat37CI>
+  - <https://www.youtube.com/watch?v=S2t5Iat37CI>
 - Manjaro iso-profiles repository
-      - <https://gitlab.manjaro.org/profiles-and-settings/iso-profiles>
-      - Clone Link: `https://gitlab.manjaro.org/profiles-and-settings/iso-profiles.git`
+  - <https://gitlab.manjaro.org/profiles-and-settings/iso-profiles>
+  - Clone Link: `https://gitlab.manjaro.org/profiles-and-settings/iso-profiles.git`
 - [CI] iso_build script *Original*
-      - <https://gitlab.manjaro.org/-/snippets/630>
+  - <https://gitlab.manjaro.org/-/snippets/630>
 - Manjaro Packages Compare
-      - <https://packages.manjaro.org/?query=%23manjaro>
+  - <https://packages.manjaro.org/?query=%23manjaro>
 
 ## Modified CI Code
 
