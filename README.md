@@ -12,6 +12,9 @@
   - <https://gitlab.manjaro.org/-/snippets/630>
 - Manjaro Packages Compare
   - <https://packages.manjaro.org/?query=%23manjaro>
+- Manjaro ISO Actions used for building
+  - <https://github.com/manjaro/manjaro-iso-action>
+  - Custom Input Fields - <https://github.com/manjaro/manjaro-iso-action/blob/main/action.yml>
 
 ## Modified CI Code
 
@@ -44,7 +47,8 @@ jobs:
       matrix:
         EDITION: [xfce]
         BRANCH: [stable]
-        SCOPE: [minimal,full]
+        SCOPE: [minimal]
+        PROFILEREPO: [https://github.com/0x3508A/manjaro-iso-profiles]
     steps:
       - 
         uses: styfle/cancel-workflow-action@0.9.0
@@ -59,6 +63,7 @@ jobs:
         name: image-build-upload
         uses: manjaro/manjaro-iso-action@main
         with:
+          iso-profiles-repo: ${{ matrix.profilerepo }}
           edition: ${{ matrix.edition }}
           branch: ${{ matrix.branch }}
           scope: ${{ matrix.scope }}
