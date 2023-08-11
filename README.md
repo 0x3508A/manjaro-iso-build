@@ -15,6 +15,7 @@
 - Manjaro ISO Actions used for building
   - <https://github.com/manjaro/manjaro-iso-action>
   - Custom Input Fields - <https://github.com/manjaro/manjaro-iso-action/blob/main/action.yml>
+- Linux Kernel Releases <https://www.kernel.org/releases.html>
 
 ## Modified CI Code
 
