@@ -27,7 +27,7 @@ jobs:
         EDITION: [xfce]
         BRANCH: [stable]
         SCOPE: [minimal]
-        PROFILEREPO: ['https://github.com/0x3508A/manjaro-iso-profiles']
+        # PROFILEREPO: ['https://github.com/0x3508A/manjaro-iso-profiles']
     steps:
       - 
         uses: styfle/cancel-workflow-action@0.9.0
@@ -42,7 +42,7 @@ jobs:
         name: image-build-upload
         uses: manjaro/manjaro-iso-action@main
         with:
-          iso-profiles-repo: ${{ matrix.profilerepo }}
+          # iso-profiles-repo: ${{ matrix.profilerepo }}
           edition: ${{ matrix.edition }}
           branch: ${{ matrix.branch }}
           scope: ${{ matrix.scope }}
